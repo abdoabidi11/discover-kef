@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<!-- Indispensable pour le responsive sur mobile -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discover Le Kef</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2> Discover le kef</h2>
+        <div>
+            <a href="#accueil">accueil</a>
+            <a href="#offres">offres</a>
+            <a href="#contact">contact</a>
+        </div>
+    </nav>
+    <section class="hero" id="accueil">
+<h1>Découvrez la beauté du Kef</h1>
+<p>Circuits, hébergements et activités au nord-ouest de la Tunisie.</p>
+<a href="#offres" class="btn">Voir nos offres</a>
+</section>
+<section class="offres" id="offres">
+<h2>Nos offres</h2>
+<div class="grille">
+<article class="carte">
+<img src="https://picsum.photos/400/250?random=1" alt="Kasbah">
+<div class="carte-corps">
+<h3>Circuit Kasbah</h3>
+<p>Visite guidée de la vieille ville du Kef.</p>
+<span class="prix">45 DT</span>
+</div>
+</article>
+<article class="carte">
+<img src="https://picsum.photos/400/250?random=2" alt="Dyr">
+<div class="carte-corps">
+<h3>Séjour au Dyr</h3>
+<p>Week-end nature dans les montagnes du Dyr.</p>
+<span class="prix">120 DT</span>
+</div>
+</article>
+<article class="carte">
+<img src="https://picsum.photos/400/250?random=3" alt="Jugurtha">
+<div class="carte-corps">
+<h3>Randonnée Jugurtha</h3>
+<p>Marche guidée vers la table de Jugurtha.</p>
+<span class="prix">60 DT</span>
+</div>
+</article>
+</div>
+</section>
+<section class="contact" id="contact">
+<h2>Contactez-nous</h2>
+<!-- novalidate : on désactive la validation du navigateur, on utilise la nôtre -->
+<form id="form-contact" novalidate>
+<label for="nom">Nom</label>
+<input type="text" id="nom" placeholder="Votre nom">
+<span class="erreur"></span> <!-- le message d'erreur s'affichera ici -->
+<label for="email">Email</label>
+<input type="email" id="email" placeholder="vous@exemple.com">
+<span class="erreur"></span>
+<label for="msg">Message</label>
+<textarea id="msg" rows="4"></textarea>
+<span class="erreur"></span>
+<button type="submit" class="btn">Envoyer</button>
+<p id="succes" class="succes" hidden>Merci ! Votre message a bien été envoyé.</p>
+</form>
+</section>
+<footer class="footer">
+<p>&copy; 2026 Discover Le Kef - ISET Le Kef</p>
+</footer>
+<!-- Le script se charge à la fin, quand tout le HTML existe -->
+<script src="script.js"></script>
+</body>
+</html>
+    
